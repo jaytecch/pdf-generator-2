@@ -14,7 +14,7 @@ if (!server) {
 	process.exit(-1);
 }
 
-server.listen(CONFIG.port, CONFIG.hostname, null, onServerListening);
+server.listen(5000);
 
 // Keep track of connections, to enforce killing them when server must be stopped.
 server.on('connection', connections.onNewConnection);
